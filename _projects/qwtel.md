@@ -1,10 +1,9 @@
 ---
 layout: project
-title: '@qwtel'
-caption: How I use Hydejack on my personal site.
+title: 'Visualizations'
+caption: Beautiful and thought provoking media.
 description: >
-  This is how I use Hydejack on my personal site. 
-  Much of the development is informed from my experience of using it myself, creating a tight feedback loop.
+  
 date: 1 Jun 2020
 image: 
   path: /assets/img/projects/qwtel.jpg
