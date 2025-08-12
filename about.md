@@ -16,20 +16,20 @@ redirect_from:
 
 ## Hi, I’m Colton
 
-I build geospatial things—data pipelines, raster processing workflows, and fast web maps—mostly in Python.  
+I’m passionate about all things geospatial and the transformative impact it can have on our world.
 {:.lead}
 
 1. This list becomes the table of contents
 {:toc .large-only}
 
-## What I do
+## About Me
 
-- **Raster processing & analysis** — DEM/DSM workflows, terrain derivatives, hydrology prep.
-- **Data engineering for GIS** — reproducible pipelines, QA steps, and reports.
-- **Web mapping** — MapLibre frontends, vector tiles (PMTiles/MVT), simple APIs when needed.
-- **Databases** — Postgres/PostGIS for storage, indexing, and spatial queries.
+I currently live in Salt Lake City, Utah working as the GIS Dept. Manager for Aero-Graphics Inc.
+How did I get here?
+I spent the most formative years of my life going on adventures up and down the Appalachian mountains. My Dad taught me how to fish, ride a bike, hunt, hike, and how to be outside. 
+One summer I broke my leg (long story), and decided to try my hand at rock climbing. How thankful I am for that broken tibia, because the world of climbing changed my life. 
 
-> I keep descriptions high-level here—no client details or contract specifics.
+My appreciation for the natural world grew as I experienced the most sacred crags in the Eastern US. I realized that places some may dismiss are temples to others. A wild stream might be the most beautiful place in the world to a fisherman. One trail can change a mountainbikers life. TO BE CONTINUED....
 {:.figcaption}
 
 ## How I like to work
