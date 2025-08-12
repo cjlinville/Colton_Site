@@ -1,9 +1,10 @@
 ---
 layout: project
-title: 'Hydejack Site'
-caption: Dogfooding Hydejack to sell Hydejack.
+title: 'Historical'
+caption: Historical Aerial Imagery and its many uses.
 description: >
-  While Hydejack is built for personal sites, it's versatility allows it to be used a product page as well.
+  The farther backward you can look, the farther forward you are likely to see. 
+  W. Churchill
 date: '01-01-2016'
 image: 
   path: /assets/img/projects/hydejack-site.jpg
