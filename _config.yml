@@ -35,7 +35,7 @@ menu:
   - title: Projects
     url: /projects/
   - title: Map
-    url: /map/
+    url: /maps/
   - title: Blog
     url: /blog/
   - title: Contact
@@ -237,9 +237,6 @@ plugins:
 optional_front_matter:
   remove_originals: true
 
-readme_index:
-  remove_originals: true
-  with_frontmatter: true
 
 relative_links:
   collections: true
