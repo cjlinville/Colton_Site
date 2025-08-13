@@ -20,12 +20,18 @@ redirect_from:
 ## About Me
 
 I currently live in Salt Lake City, Utah working as the GIS Dept. Manager for Aero-Graphics Inc.
+{:.lead}
 How did I get here?
-I spent the most formative years of my life going on adventures up and down the Appalachian mountains. My Dad taught me how to fish, ride a bike, hunt, hike, and how to be outside. 
-One summer I broke my leg (long story), and decided to try my hand at rock climbing. How thankful I am for that broken tibia, because the world of climbing changed my life. 
+{:.lead}
+I spent the most formative years of my life on adventures in and around the Appalachian mountains. My Dad taught me how to fish, hike, ride a bike, and how to be outside. Eventually I fell headfirst into the world of rock climbing. This was my gateway drug to mountain biking, trail running, ski touring, mountaineering, and everything in between.
+{:.lead}
+My appreciation for the natural world grew as I experienced what the Eastern US had to offer. I began to undestand that places unremarkable to some, are temples to others. A wild stream might be sacred to a fisherman. A single trail can mean so much the right person. Even a railroad cut can bring a climbing community together.
 
-My appreciation for the natural world grew as I experienced the most sacred crags in the Eastern US. I realized that places some may dismiss are temples to others. A wild stream might be the most beautiful place in the world to a fisherman. One trail can change a mountainbikers life. TO BE CONTINUED....
-{:.figcaption}
+{:.lead}
+My passions brought me to Boone, North Carolina, where I graduated from Appalachian State University with a B.S. in Geology, and a certificate in GIS.
+I knew immediatly...
+
+#{:.figcaption}
 
 ## How I like to work
 

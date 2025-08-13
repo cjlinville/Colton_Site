@@ -198,7 +198,7 @@ plugins:
   - jekyll-feed
   - jekyll-optional-front-matter
   - jekyll-paginate
-  - jekyll-readme-index
+  # jekyll-readme-index
   - jekyll-redirect-from
   - jekyll-relative-links
   - jekyll-seo-tag
