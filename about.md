@@ -12,8 +12,6 @@ redirect_from:
 
 # About
 
-<!--author-->
-
 ## Hi, I’m Colton
 
 I’m passionate about all things geospatial and the transformative impact it can have on our world.
