@@ -14,4 +14,7 @@ My interests lie at the intersection of remote sensing/GIS and our cultural, rec
 
 Please take a look around and feel free to contact me!
 
-insert image here
+![Riding my bike on the GDMBR](/assets/img/me/Divide.JPG)
+
+Riding my bike on the Tour Divide 2025
+{: .figcaption }
