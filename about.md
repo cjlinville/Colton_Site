@@ -31,6 +31,7 @@ Shortly after graduating, and being propelled by adventure, I moved to Salt Lake
 I found myself bouncing between a few jobs until settling at Aero-Graphics.
 {:.lead}
 
+![Brad and I climbing](/assets/img/me/BradandI.JPG)
 
 
 
