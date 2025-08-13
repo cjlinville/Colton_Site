@@ -10,9 +10,6 @@ redirect_from:
   - /download/
 ---
 
-# About
-
-{:.lead}
 
 1. This list becomes the table of contents
 {:toc .large-only}
@@ -28,7 +25,13 @@ I spent the most formative years of my life on adventures in and around the Appa
 My appreciation for the natural world grew as I experienced what the Eastern US had to offer. I began to undestand that places unremarkable to some, are temples to others. A wild stream might be sacred to a fisherman. A single trail can mean so much the right person. Even a railroad cut can bring a climbing community together.
 {:.lead}
 My passions brought me to Boone, North Carolina, where I graduated from Appalachian State University with a B.S. in Geology, and a certificate in GIS.
-Months spent field mapping...geology...real passion in GIS...multidisciplinary...real impact
+Geology was the perfect spatial adjacent warmup to what I quickly understood to be my calling in life. I was enamoured with GIS, remote sensing, and environmental science. The multidisciplinary nature of these fields give way to endless possibilities that drive real world impacts. Nothing was more obvious to me than using these principles to ensure the conservation and protection of our cultural, recreational, and natural resources.
+{:.lead}
+Shortly after graduating, and being propelled by adventure, I moved to Salt Lake City. Here, I spent countless hours learning, researching, and throwing myself into personal projects. A lot is possible with a can-do attitude and a thirst for learning.
+I found myself bouncing between a few jobs until settling at Aero-Graphics.
+{:.lead}
+
+
 
 
 
