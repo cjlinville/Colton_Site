@@ -12,9 +12,6 @@ redirect_from:
 
 # About
 
-## Hi, I’m Colton
-
-I’m passionate about all things geospatial and the transformative impact it can have on our world.
 {:.lead}
 
 1. This list becomes the table of contents

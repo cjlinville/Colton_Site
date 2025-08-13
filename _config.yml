@@ -18,8 +18,8 @@ description: >
   GIS & Remote Sensing · Python automation · Raster workflows · Fast web maps.
 tagline: |
   Geospatial data engineering,
-  web mapping
-  and visualizations.
+  web mapping <br> and
+  visualizations.
 keywords: [GIS, Python, Raster, PostGIS, MapLibre, Strava]
 
 logo: /assets/img/logo.png
