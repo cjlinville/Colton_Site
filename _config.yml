@@ -17,8 +17,8 @@ title: Colton Linville
 description: >
   GIS & Remote Sensing · Python automation · Raster workflows · Fast web maps.
 tagline: |
-  Geospatial data engineering,
-  web mapping <br> and
+  Geospatial data engineering,<br>
+  web mapping and <br>
   visualizations.
 keywords: [GIS, Python, Raster, PostGIS, MapLibre, Strava]
 
@@ -165,6 +165,9 @@ collections:
     output: true
   projects:
     permalink: /projects/:path/
+    output: true
+  maps:
+    permalink: /maps/:path/
     output: true
 
 # ========================================================================================
