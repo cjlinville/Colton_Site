@@ -2,7 +2,8 @@
 layout: cover
 title: Welcome!
 sitemap: True
----
+cover: True
+--- 
 
 ## Hi, I’m Colton
 
