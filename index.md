@@ -1,9 +1,8 @@
 ---
-layout: welcome
+layout: page
 title: Welcome!
-cover: True
-
---- 
+sitemap: True
+---
 
 ## Hi, I’m Colton
 
