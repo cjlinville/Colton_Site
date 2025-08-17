@@ -34,14 +34,13 @@ menu:
     url: /about/
   - title: Projects
     url: /projects/
-  - title: Map
-    url: /maps/
   - title: Blog
     url: /blog/
+  - title: Gallery
+    url: /gallerys/
   - title: Contact
     url: /contact/
-  - title: Gallery
-    url: /gallery/
+
     
 
 legal:
@@ -166,8 +165,8 @@ collections:
   projects:
     permalink: /projects/:path/
     output: true
-  maps:
-    permalink: /maps/:path/
+  gallerys:
+    permalink: /gallerys/:path/
     output: true
 
 # ========================================================================================
