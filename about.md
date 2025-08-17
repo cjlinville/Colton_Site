@@ -21,7 +21,7 @@ I currently live in Salt Lake City, Utah working as the GIS Dept. Manager for Ae
 {:.lead}
 How did I get here?
 {:.lead}
-I spent the most formative years of my life on adventures in and around the Appalachian mountains. My Dad taught me how to fish, hike, ride a bike, and generally live outside. Eventually I fell headfirst into the world of rock climbing. This was my gateway drug to mountain biking, trail running, ski touring, mountaineering, and everything in between.
+I spent the most formative years of my life on adventures in and around the Appalachian mountains. My Dad taught me how to fish, hike, ride a bike, and generally live outside. Eventually I fell headfirst into the world of rock climbing. This was the gateway to mountain biking, trail running, ski touring, mountaineering, and everything in between.
 {:.lead}
 My appreciation for the natural world grew as I experienced what the Eastern US had to offer. I began to undestand that places unremarkable to some, are temples to others. A wild stream might be sacred to a fisherman. A single trail can mean so much the right person. Even a railroad cut can bring a climbing community together.
 {:.lead}
