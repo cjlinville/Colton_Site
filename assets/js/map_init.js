@@ -41,7 +41,7 @@
       // 1) Add the source
       map.addSource("activities", {
         type: "geojson",
-        data: "/assets/data/activities.geojson",
+        data: "/assets/geojson/all.geojson",
         // optional: cluster points
         // cluster: true, clusterRadius: 40
       });
@@ -50,7 +50,7 @@
   // 1) Add the source
   map.addSource("activities", {
     type: "geojson",
-    data: "/assets/data/activities.geojson",
+    data: "/assets/geojson/all.geojson",
     // optional: cluster points
     // cluster: true, clusterRadius: 40
   });
