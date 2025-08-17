@@ -10,16 +10,13 @@ I’m passionate about all things geospatial and the transformative impact it ca
 
 My interests lie at the intersection of remote sensing/GIS and our cultural, recreational, and natural resources.
 
-{:.lead}
-
 Please take a look around and feel free to contact me!
 
 ![Riding my bike on the GDMBR](/assets/img/me/Divide.JPG)
 
-Riding my bike on the Tour Divide 2025
+Riding my bike on the Tour Divide 2025. Canada to Mexico
 {: .figcaption }
 
-<!--projects-->   <!-- shows the most recent projects -->
 
-
-<!--posts-->      <!-- shows the most recent blog posts -->
+## Recent Projects
+<!--projects-->   
