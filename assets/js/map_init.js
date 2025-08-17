@@ -66,7 +66,7 @@
 
 
   setTimeout(() => map.resize(), 0);
-});
+  });
 
 
 
