@@ -1,6 +1,6 @@
 ---
-layout: project
-title: 'Historical'
+layout: map
+title: 'Test'
 caption: Historical Aerial Imagery and its many uses.
 description: >
   The farther backward you can look, the farther forward you are likely to see. 
