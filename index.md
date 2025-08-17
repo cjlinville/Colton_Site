@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: welcome
 title: Welcome!
 cover: true
 ---
@@ -18,3 +18,8 @@ Please take a look around and feel free to contact me!
 
 Riding my bike on the Tour Divide 2025
 {: .figcaption }
+
+<!--projects-->   <!-- shows the most recent projects -->
+
+
+<!--posts-->      <!-- shows the most recent blog posts -->
