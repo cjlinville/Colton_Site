@@ -1,9 +1,8 @@
 ---
-layout: collection
+layout: gallery
 title: Gallery
-permalink: /gallery/
-collection: gallery
-entries_layout: grid
 show_collection: gallery
-sitemap: true
+description: >
+  Some geospatial eye-candy
+no_groups: true
 ---
