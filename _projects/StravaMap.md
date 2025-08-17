@@ -33,67 +33,57 @@ However, I've given [certain](https://qwtel.com/projects/ducky-hunting/) [pages]
 <script src="https://unpkg.com/maplibre-gl@3.6.1/dist/maplibre-gl.js"></script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  // Basic raster style using OpenStreetMap tiles (no API key needed)
-  const style = {
-    "version": 8,
-    "sources": {
-      "osm-tiles": {
-        "type": "raster",
-        "tiles": ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
-        "tileSize": 256,
-        "attribution":
-          '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      }
-    },
-    "layers": [
-      { "id": "osm-tiles", "type": "raster", "source": "osm-tiles" }
-    ]
-  };
+(function () {
+  function initMap() {
+    const el = document.getElementById('map');
+    if (!el) return;                 // not on this page
+    if (el.dataset.inited) {         // already initialized (back/forward nav)
+      if (window._mlmap) window._mlmap.resize();
+      return;
+    }
+    el.dataset.inited = '1';
 
-  const map = new maplibregl.Map({
-    container: "map",
-    style: style,
-    center: [-111.8910, 40.7608], // SLC lon,lat
-    zoom: 9
+    const style = {
+      version: 8,
+      sources: {
+        osm: {
+          type: 'raster',
+          tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+          tileSize: 256,
+          attribution: '© OpenStreetMap contributors'
+        }
+      },
+      layers: [{ id: 'osm', type: 'raster', source: 'osm' }]
+    };
+
+    const map = new maplibregl.Map({
+      container: 'map',
+      style,
+      center: [-111.8910, 40.7608],
+      zoom: 9
+    });
+    window._mlmap = map; // for debugging / resize on PJAX
+
+    map.addControl(new maplibregl.NavigationControl(), 'top-right');
+
+    map.on('load', function () {
+      // add your sources/layers here if needed
+      setTimeout(() => map.resize(), 0); // ensure proper sizing after layout
+    });
+  }
+
+  // Run on first full load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMap);
+  } else {
+    initMap();
+  }
+  // Run again after Hydejack PJAX navigations
+  document.addEventListener('pjax:load', function () {
+    initMap();
+    // If the map existed from a previous visit, force a resize
+    if (window._mlmap) setTimeout(() => window._mlmap.resize(), 0);
   });
-
-  // Navigation (zoom/rotate) controls
-  map.addControl(new maplibregl.NavigationControl(), "top-right");
-
-  // Example GeoJSON overlay (replace with your data)
-  map.on("load", () => {
-    map.addSource("points", {
-      type: "geojson",
-      data: {
-        "type": "FeatureCollection",
-        "features": [
-          { "type":"Feature",
-            "properties": { "name":"Aero-Graphics HQ" },
-            "geometry":{"type":"Point","coordinates":[-111.8910, 40.7608]}
-          }
-        ]
-      }
-    });
-    map.addLayer({
-      id: "points-layer",
-      type: "circle",
-      source: "points",
-      paint: { "circle-radius": 6, "circle-color": "#4fb1ba" }
-    });
-
-    // Optional popup
-    map.on("click", "points-layer", (e) => {
-      const f = e.features[0];
-      new maplibregl.Popup()
-        .setLngLat(f.geometry.coordinates)
-        .setHTML(`<strong>${f.properties.name}</strong>`)
-        .addTo(map);
-    });
-
-    // Cursor change on hover
-    map.on("mouseenter", "points-layer", () => map.getCanvas().style.cursor = "pointer");
-    map.on("mouseleave", "points-layer", () => map.getCanvas().style.cursor = "");
-  });
-});
+})();
 </script>
+
