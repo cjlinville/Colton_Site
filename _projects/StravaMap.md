@@ -27,4 +27,4 @@ For my personal site I've toned it down a bit. Instead of a flashy sidebar image
 However, I've given [certain](https://qwtel.com/projects/ducky-hunting/) [pages](https://qwtel.com/projects/blocky-blocks/) big sidebar images, and let Hydejack blend back to normal when the user navigates away.
 
 
-{% include straca_map.html %}
+{% include strava_map.html %}
