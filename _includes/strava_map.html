@@ -1,17 +1,21 @@
 <div id="map" style="width:100%;height:500px;border-radius:12px;"></div>
 
-<link href="https://unpkg.com/maplibre-gl@3.6.1/dist/maplibre-gl.css" rel="stylesheet">
-<script src="https://unpkg.com/maplibre-gl@3.6.1/dist/maplibre-gl.js"></script>
+<link data-pjax rel="stylesheet" href="https://unpkg.com/maplibre-gl@3.6.1/dist/maplibre-gl.css">
+<script data-pjax src="https://unpkg.com/maplibre-gl@3.6.1/dist/maplibre-gl.js"></script>
 
-<script>
+{% raw %}
+<script data-pjax>
 (function () {
-  function initMap() {
-    var el = document.getElementById('map');
-    if (!el) return;
-    if (el.dataset.inited) { if (window._mlmap) window._mlmap.resize(); return; }
-    el.dataset.inited = '1';
+  let map;
 
-    var style = {
+  function initMap() {
+    const el = document.getElementById('map');
+    if (!el) return;
+
+    // if map already exists (PJAX), clean it up before re-init
+    if (map && map.remove) map.remove();
+
+    const style = {
       "version": 8,
       "sources": {
         "osm": {
@@ -24,27 +28,26 @@
       "layers": [{ "id": "osm", "type": "raster", "source": "osm" }]
     };
 
-    var map = new maplibregl.Map({
+    map = new maplibregl.Map({
       container: "map",
       style: style,
-      center: [-111.8910, 40.7608], // lon, lat
+      center: [-111.8910, 40.7608],
       zoom: 9
     });
     window._mlmap = map;
     map.addControl(new maplibregl.NavigationControl(), "top-right");
-    map.on("load", function () { setTimeout(function(){ map.resize(); }, 0); });
+    map.on("load", () => setTimeout(() => map.resize(), 0));
   }
 
-  // initial full load
+  // first load
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initMap);
   } else {
     initMap();
   }
-  // re-run after Hydejack PJAX navigations
-  document.addEventListener("pjax:load", function () {
-    initMap();
-    if (window._mlmap) setTimeout(function(){ window._mlmap.resize(); }, 0);
-  });
+
+  // Hydejack PJAX load
+  document.addEventListener("hy-push-state-after", initMap);
 })();
 </script>
+{% endraw %}
