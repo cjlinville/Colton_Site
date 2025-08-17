@@ -3,7 +3,7 @@
 
   function ensureMapLibre(cb) {
     if (window.maplibregl && typeof window.maplibregl.Map === "function") {
-      cb(); 
+      cb();
     } else {
       setTimeout(() => ensureMapLibre(cb), 30);
     }
@@ -39,36 +39,35 @@
     map.addControl(new maplibregl.NavigationControl(), "top-right");
 
     map.on("load", () => {
-  // 1) Add the source
-  map.addSource("activities", {
-    type: "geojson",
-    data: "/assets/geojson/all.geojson",
-    // optional: cluster points
-    // cluster: true, clusterRadius: 40
-  });
+      // 1) Add the source
+      map.addSource("activities", {
+        type: "geojson",
+        data: "/assets/geojson/all.geojson"
+      });
 
-  
-  // 2b) Lines (e.g., ride tracks)
-  map.addLayer({
-    id: "activities-lines",
-    type: "line",
-    source: "activities",
-    paint: {
-      "line-color": "#00aaff",
-      "line-width": [
-        "interpolate", ["linear"], ["zoom"],
-        6, 1.0,
-        12, 3.0
-      ]
-    },
-    filter: ["==", ["geometry-type"], "LineString"]
-  });
+      // 2) Lines (e.g., ride tracks)
+      map.addLayer({
+        id: "activities-lines",
+        type: "line",
+        source: "activities",
+        filter: ["==", ["geometry-type"], "LineString"],
+        paint: {
+          "line-color": "#00aaff",
+          "line-width": ["interpolate", ["linear"], ["zoom"], 6, 1.0, 12, 3.0],
+          "line-opacity": 0.9
+        },
+        layout: {
+          "line-cap": "round",
+          "line-join": "round"
+        }
+      });
 
+      setTimeout(() => map.resize(), 0);
+    });
 
-  setTimeout(() => map.resize(), 0);
-  });
-
-
+    // optional: surface load errors in the console
+    map.on("error", (e) => console.error("MapLibre error:", e && e.error));
+  } // <-- this brace was missing
 
   function boot() { ensureMapLibre(initMap); }
 
