@@ -1,5 +1,5 @@
 ---
-layout: map
+layout: gallery
 title: 'test'
 caption: Beautiful and thought provoking media.
 description: >
