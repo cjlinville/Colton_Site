@@ -20,6 +20,7 @@ accent_image:
 theme_color: '#193747'
 sitemap: false
 no_push_state: true
+no_pjax: true
 
 ---
 
